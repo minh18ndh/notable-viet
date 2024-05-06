@@ -79,7 +79,7 @@ const MapComponent = ({ viets }) => {
 
   return <div ref={mapRef} style={{ 
                               width: '100%', 
-                              height: '86vh', 
+                              height: '86.8vh', 
                             }} />;
 };
 
