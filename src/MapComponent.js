@@ -15,7 +15,7 @@ const MapComponent = ({ viets }) => {
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
         subdomains: 'abcd',
-        minZoom: 2,
+        minZoom: 1,
         maxZoom: 20
     }).addTo(mapInstance);
 
@@ -35,9 +35,7 @@ const MapComponent = ({ viets }) => {
       // Create a custom icon with the person's name
       const customIcon = L.divIcon({
         className: 'custom-icon',
-        html: viet.name,
-        iconSize: [300, 50],
-        iconAnchor: [120, 10] 
+        html: viet.name
       });
 
       // Create HTML content for the popup with person's information
@@ -64,12 +62,25 @@ const MapComponent = ({ viets }) => {
     // Add marker cluster group to map
     mapInstance.addLayer(markers);
 
+    // Define boundaries for the map to restrict dragging
+    const southWest = L.latLng(-85, -360);
+    const northEast = L.latLng(90, 360);
+    const bounds = L.latLngBounds(southWest, northEast);
+    mapInstance.setMaxBounds(bounds); // Restrict map dragging within bounds
+    mapInstance.on('drag', () => {
+      mapInstance.panInsideBounds(bounds, { animate: false });
+    });
+
     return () => {
       mapInstance.remove();
     };
+
   }, [viets]);
 
-  return <div ref={mapRef} style={{ width: '100%', height: '86.8vh' }} />;
+  return <div ref={mapRef} style={{ 
+                              width: '100%', 
+                              height: '86vh', 
+                            }} />;
 };
 
 export default MapComponent;
