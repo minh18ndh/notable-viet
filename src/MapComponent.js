@@ -11,6 +11,7 @@ const MapComponent = ({ viets }) => {
 
   useEffect(() => {
     const mapInstance = L.map(mapRef.current).setView([0, 0], 2);
+    mapInstance.getContainer().style.backgroundColor = '#262626FF'; // Change map container's background color
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
