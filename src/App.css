@@ -1,6 +1,8 @@
+/* App.css */
+
 .App {
-  background-color: #262626ff;
   text-align: center;
+  position: relative; /* Ensure the button is positioned relative to this container */
 }
 
 .App-logo {
@@ -38,22 +40,55 @@
   }
 }
 
-.custom-icon {
+.custom-icon-dark {
   color: rgb(220, 208, 216); 
   font-weight: bold;
   text-align: center; 
   font-size: 10px;
 }
 
-#menu {
+.custom-icon-light {
+  color: rgb(38, 38, 38); 
+  font-weight: bold;
+  text-align: center; 
+  font-size: 10px;
+}
+
+.menu-dark {
   position: relative;
-  color: rgba(38, 38, 38, 255);
-  background: rgba(38, 38, 38, 255);
-  padding: 20px 20px 10px;
   color: rgb(255, 255, 255);
+  background: rgb(38, 38, 38);
+  padding: 20px 20px 10px;
   font-weight: bold;
   text-align: center; 
   font-size: 12px;
   width: 100%;
   text-justify: auto;
+}
+
+.menu-light {
+  position: relative;
+  color: rgb(38, 38, 38);
+  background: rgb(212, 218, 220);
+  padding: 20px 20px 10px;
+  font-weight: bold;
+  text-align: center; 
+  font-size: 12px;
+  width: 100%;
+  text-justify: auto;
+}
+
+.theme-toggle-button {
+  position: fixed; /* Fixed positioning */
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent; /* Ensure the button itself has no background color */
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's above other elements */
+  background-size: contain; /* Ensure the icon fits within the button */
+  background-repeat: no-repeat; /* Ensure the icon does not repeat */
+  background-position: center; /* Center the icon within the button */
 }
