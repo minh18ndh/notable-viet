@@ -2,7 +2,7 @@
 
 .App {
   text-align: center;
-  position: relative; /* Ensure the button is positioned relative to this container */
+  position: relative;
 }
 
 .App-logo {
@@ -41,16 +41,16 @@
 }
 
 .custom-icon-dark {
-  color: rgb(220, 208, 216); 
+  color: rgb(220, 208, 216);
   font-weight: bold;
-  text-align: center; 
+  text-align: center;
   font-size: 10px;
 }
 
 .custom-icon-light {
-  color: rgb(38, 38, 38); 
+  color: rgb(38, 38, 38);
   font-weight: bold;
-  text-align: center; 
+  text-align: center;
   font-size: 10px;
 }
 
@@ -60,7 +60,7 @@
   background: rgb(38, 38, 38);
   padding: 20px 20px 10px;
   font-weight: bold;
-  text-align: center; 
+  text-align: center;
   font-size: 12px;
   width: 100%;
   text-justify: auto;
@@ -72,23 +72,38 @@
   background: rgb(212, 218, 220);
   padding: 20px 20px 10px;
   font-weight: bold;
-  text-align: center; 
+  text-align: center;
   font-size: 12px;
   width: 100%;
   text-justify: auto;
 }
 
 .theme-toggle-button {
-  position: fixed; /* Fixed positioning */
+  position: fixed;
   top: 20px;
   right: 20px;
   width: 40px;
   height: 40px;
-  background-color: transparent; /* Ensure the button itself has no background color */
+  background-color: transparent;
   border: none;
   cursor: pointer;
-  z-index: 1000; /* Ensure it's above other elements */
-  background-size: contain; /* Ensure the icon fits within the button */
-  background-repeat: no-repeat; /* Ensure the icon does not repeat */
-  background-position: center; /* Center the icon within the button */
+  z-index: 1000;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
