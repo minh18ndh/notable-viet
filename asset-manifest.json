@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/notable-viet/static/css/main.66281d9c.css",
+    "main.css": "/notable-viet/static/css/main.a3d4773e.css",
     "main.js": "/notable-viet/static/js/main.d0527868.js",
     "index.html": "/notable-viet/index.html",
-    "main.66281d9c.css.map": "/notable-viet/static/css/main.66281d9c.css.map",
+    "main.a3d4773e.css.map": "/notable-viet/static/css/main.a3d4773e.css.map",
     "main.d0527868.js.map": "/notable-viet/static/js/main.d0527868.js.map"
   },
   "entrypoints": [
-    "static/css/main.66281d9c.css",
+    "static/css/main.a3d4773e.css",
     "static/js/main.d0527868.js"
   ]
 }
