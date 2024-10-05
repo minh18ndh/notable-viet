@@ -107,3 +107,38 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.tooltip {
+  visibility: hidden;
+  width: 500px; /* Adjust the width as needed */
+  background-color: #fdcb50; /* Tooltip background color */
+  color: #262626; /* Text color */
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: -5px; /* Place tooltip in the middle of its container element */
+  left: 105%; /* Position it to the right of the button */
+  /* margin-left: -60px; Center the tooltip */
+  opacity: 0; /* Make it invisible */
+  transition: opacity 0.3s; /* Fade effect */
+}
+
+/* Show the tooltip when hovering over the button */
+.info-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1; /* Make it visible */
+}
+
+/* Create the arrow */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  /* top: 50%; Center vertically */
+  right: 100%; /* Position it at the right side of the tooltip */
+  margin-top: -5px; /* Adjust to center the arrow */
+  border-width: 5px; /* Arrow size */
+  border-style: solid;
+  border-color: transparent #fdcb50 transparent transparent; /* Triangle pointing to the left */
+}
