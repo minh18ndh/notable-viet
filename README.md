@@ -12,21 +12,21 @@ The application provides information about each individual, including their birt
 
 ## Technologies Used
 
-- Frontend: React, Leaflet, Axios
-- Backend: Spring Boot, MongoDB
-- Styling: CSS
-- API: RESTful API for fetching data from the backend
+- **Frontend**: React, Leaflet, Axios
+- **Backend**: Spring Boot
+- **Database**: MongoDB
+- **API**: RESTful API for fetching data from the backend
 
 ## Installation
 
 ### Prerequisites
 
 - Node.js (v14 or later)
-- MongoDB (for the backend)
-- Java (v11 or later for the backend)
+- MongoDB (for database)
+- Java (v11 or later for backend)
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/notable-viet.git
+git clone https://github.com/minh18ndh/notable-viet.git
 cd notable-viet
