@@ -51,12 +51,12 @@ function App() {
         className="info-button"
         style={infoButtonStyle}
       >
-        <span className="tooltip">This website displays notable people who have at least 1/4 Vietnamese blood or have Vietnamese nationality.</span>
+        <span className="tooltip">This website displays notable people who is at least 1/4 Vietnamese or have Vietnamese nationality.</span>
       </button>
 
       <div className={theme === 'dark' ? 'menu-dark' : 'menu-light'}>
         <h3>Notable Vietnamese <img src={`${process.env.PUBLIC_URL}/vn.ico`} alt="vnflag" /></h3>
-        <p>Deeply inspired by <a href="https://tjukanovt.github.io/notable-people" target="_blank">Notable people by Topi Tjukanov</a>.</p>
+        <p>Inspired by <a href="https://tjukanovt.github.io/notable-people" target="_blank">Notable people by Topi Tjukanov</a>.</p>
       </div>
       <MapComponent viets={viets} theme={theme} />
     </div>
